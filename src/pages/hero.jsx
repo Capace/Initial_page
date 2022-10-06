@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { MainTitle } from "../components/hero/title-box";
 
 import symbol from "../components/imgs/symbolnew.svg";
