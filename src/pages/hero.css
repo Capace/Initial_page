@@ -1,0 +1,100 @@
+/* #239981 
+#994323  */
+
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+.hero-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(35, 153, 129, 0.65),
+      rgba(199, 249, 204, 0.65)
+    ),
+    url(../components/imgs/human.png);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(74% 100%, 100% 82%, 100% 0, 26% 0, 0 18%, 0 100%);
+  position: relative;
+}
+
+.symbol-svg {
+  width: 12rem;
+  fill: #239981;
+  stroke: #239981;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.symbol-svg:hover {
+  transform: rotate(-90deg);
+}
+
+.main-header {
+  font-family: "Special Elite", cursive;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 9.6rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 1.2rem;
+  font-size: 3rem;
+  display: block;
+}
+
+.btn {
+  font-family: "Special Elite", cursive;
+  font-size: 3.2rem;
+  color: #239981;
+  background-color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem 1rem 4rem;
+  border-radius: 2rem;
+  border-style: hidden;
+  display: inline-block;
+  transition: all 0.2s;
+  animation-name: moveInDown;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
