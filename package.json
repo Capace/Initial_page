@@ -2,7 +2,7 @@
   "name": "website-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Capace.github.io/Initial-page",
+  "homepage": "https://capace.github.io/Initial_page/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
